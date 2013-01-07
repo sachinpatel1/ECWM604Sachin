@@ -62,20 +62,20 @@ $(document).ready(function(){
   -->
 
 </head>
-<body style="background-color: #48D1CC;">
+<body style="background-color: #E6E6E6;">
  <div id="header">
  <div id="navbar">
  
        
   <ul> 
-        <li><a href="<?php echo site_url('home/search')?>"><b>Home</b></a></li> 
-        <li><a href="<?php echo site_url('home/add_post')?>"><b>Add Employee</b></a></li> 
-        <li><a href="<?php echo site_url('home/delete_post')?>"><b>Delete</b></a></li> 
-        <li><a href="<?php echo site_url('home/update_post')?>"><b>Update</b></a></li> 
-        <li><a href="<?php echo site_url('home/title_post')?>"><b>Change Job Title</b></a></li> 
-        <li><a href="<?php echo site_url('home/promote_post')?>"><b>Promote</b></a></li> 
-        <li><a href="<?php echo site_url('home/demote_post')?>"><b>Demote</b></a></li> 
-        <li><a href="<?php echo site_url('home/do_logout')?>"><font color="blue">Logout</font></a></li> 
+        <li><a href="<?php echo site_url('home_controller/HRsearch')?>"><b>Home</b></a></li> 
+        <li><a href="<?php echo site_url('home_controller/add_post')?>"><b>Add Employee</b></a></li> 
+        <li><a href="<?php echo site_url('home_controller/delete_post')?>"><b>Delete</b></a></li> 
+        <li><a href="<?php echo site_url('home_controller/update_post')?>"><b>Update</b></a></li> 
+        <li><a href="<?php echo site_url('home_controller/title_post')?>"><b>Change Job Title</b></a></li> 
+        <li><a href="<?php echo site_url('home_controller/promote_post')?>"><b>Promote</b></a></li> 
+        <li><a href="<?php echo site_url('home_controller/demote_post')?>"><b>Demote</b></a></li> 
+        <li><a href="<?php echo site_url('home_controller/do_logout')?>"><font color="blue">Logout</font></a></li> 
   </ul> 
 </div> 
  

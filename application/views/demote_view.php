@@ -1,9 +1,12 @@
 <?php $this->load->view('includes/header'); ?>
      
+	    <center>
+ <div class="hero-unit" align="center">
+	 
      <div align="center" id="Sform">
      <h1 style="color: white;">Demote Employee</h1>
      <h3 style="color: green">Please enter employee number to demote</h3>
-<form action="<?php echo site_url('home/demote_main')?>" method="post">
+<form action="<?php echo site_url('home_controller/demote_main')?>" method="post">
  
  <div class="control-group"> 
  <label class="control-group"> Employee Number:  </label>
@@ -19,5 +22,7 @@
  
  </form>
  </div>
+  </div>
+ </center>
+
  
-<?php $this->load->view('includes/footer'); ?>

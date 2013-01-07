@@ -31,7 +31,7 @@
        
        $data['query'] = $this->find_model->find($first_name,$last_name,$dept_no,$title,$limit);
        $this->load->view('find_view', $data);    // opens the employee view
-      
+       echo json_encode ($data);
 
    }
        

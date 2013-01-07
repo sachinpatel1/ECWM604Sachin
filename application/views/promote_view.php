@@ -1,9 +1,13 @@
 <?php $this->load->view('includes/header'); ?>
      
+	 
+	 
+	      <center>
+ <div class="hero-unit" align="center">
      <div align="center" id="Sform">
      <h1 style="color: white;">Promote Employee</h1>
      <h3 style="color: green">Please enter employee details to promote</h3>
-<form action="<?php echo site_url('home/promote_main')?>" method="post">
+<form action="<?php echo site_url('home_controller/promote_main')?>" method="post">
  
  <div class="control-group"> 
  <label class="control-group"> Employee Number:  </label>
@@ -29,5 +33,5 @@
  <div class="controls"> <input type= "submit" name="submit"></div>
  </form>
  </div>
- 
-<?php $this->load->view('includes/footer'); ?>
+  </div>
+  </center>

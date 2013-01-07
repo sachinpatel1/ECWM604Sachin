@@ -1,12 +1,12 @@
 body {
-	background: url(b2.jpg) repeat-x 0 0;
+	background: url(background.jpg) repeat-x 0 0;
 	margin: 0;
 	padding: 0;
 	font-family: arial;
 }
 #login_form {
 	width: 300px;
-	background: #f0f0f0 url(img/junaid.jpg) repeat-x 0 0;
+	background: #f0f0f0 url(img.jpg) repeat-x 0 0;
 	border: 1px solid white;
 	margin: 250px auto 0;
 	padding: 1em;
@@ -69,15 +69,4 @@ fieldset {
 
 h1 {
 	text-shadow: 0 1px 0 white;
-}
-
-/* Not necessary. Just the "tutorial created by" stuff at the bottom */
-
-#tutInfo {
-	background: #e3e3e3;
-	border-top: 1px solid white;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	padding: .7em .7em .7em 2em;
 }

@@ -3,6 +3,9 @@
  
    <form action="<?php echo site_url('find/findemp')?>"  id="#search_submit"  method="GET">
    
+     <center>
+ <div class="hero-unit" align="center">
+   
          <label>Enter Your Search</label><br />
          
              
@@ -60,5 +63,5 @@
         </tbody>  
         
         </table>
-        
-<?php $this->load->view('includes/footer'); ?> 
+		</div>
+		</center>

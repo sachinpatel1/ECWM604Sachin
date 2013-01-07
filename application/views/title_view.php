@@ -1,8 +1,12 @@
 <?php $this->load->view('includes/header'); ?> 
+   
+        <center>
+ <div class="hero-unit" align="center">
+   
    <div align="center" id="Sform">
      <h1 style="color: white;">Change Job title of Employee</h1>
      <h3 style="color: green">Please enter employee details to change job title</h3>
-<form action="<?php echo site_url('home/title_main')?>" method="post">
+<form action="<?php echo site_url('home_controller/title_main')?>" method="post">
  
  <div class="control-group"> 
  <label class="control-group"> Employee Number:  </label>
@@ -24,5 +28,6 @@
  
  </form>
  </div>
+ </div>
+ </center>
  
-<?php $this->load->view('includes/footer'); ?> 

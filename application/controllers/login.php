@@ -28,7 +28,7 @@ class Login extends CI_Controller{
         }else{
             // If user  did validate, 
             // Send them to home and does replace the url with https for SSL
-            redirect(str_replace('https','http',site_url('home')));
+            redirect(str_replace('https','http',site_url('home_controller')));
            
             
             
