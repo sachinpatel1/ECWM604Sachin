@@ -4,13 +4,13 @@ class Find_model extends CI_Model{
            
     function __construct(){
         parent::__construct();
-        $this->load->database();   // loads the database
+        $this->load->database();   
         
     }
     
   function find($first_name,$last_name,$dept_no,$title,$limit){
-                   
-             $this->db->select('*');
+ 
+        $this->db->select('*');
             $this->db->from('employees');
             $this->db->join('dept_emp','employees.emp_no = dept_emp.emp_no');
             $this->db->join('titles','dept_emp.emp_no = titles.emp_no');
@@ -45,10 +45,13 @@ class Find_model extends CI_Model{
                 }
                 
                 $query = $this->db->get();
-                return $query->result(); 
+          $result['results'] = $query->result_array();
+          $result['count'] = $query->num_rows();
+                return $result; 
                       
   }
   
-}    
-    
+} 
+ 
+   
     ?>

@@ -1,4 +1,4 @@
-<?php $this->load->view('includes/findheader'); ?> 
+<?php $this->load->view('includes/header2'); ?> 
  
  
    <form action="<?php echo site_url('find/findemp')?>"  id="#search_submit"  method="GET">
@@ -10,18 +10,18 @@
          
              
            <label >First Name:</label>
-           <input type= "text" name="first_name"><br />
+           <input type= "text" name="firstname"><br />
            
            <label >Last Name:</label>
-           <input type= "text" name="last_name"> <br />
+           <input type= "text" name="lastname"> <br />
            
             
            
            <label >Current job Title:</label> 
-           <input type= "text" name="title"> <br />
+           <input type= "text" name="jobtitle"> <br />
            
            <label >Departments</label> 
-            <select name="dept_no">
+            <select name="dept">
             <option value="d009" selected="d009">Customer Service</option>
             <option value="d005" selected="d005">Development</option>
             <option value="d002" selected="d002">Finance</option>
@@ -50,17 +50,17 @@
     </thead>
                                    
     <tbody>  
-    <?php foreach($query as $employee):?>
+    <?php foreach($query['results'] as $employee):?>
             <tr>                   
-                <td><?php echo ($employee->first_name); ?> </td>
-                <td><?php echo ($employee->last_name); ?> </td> 
-                <td><?php echo ($employee->dept_no); ?> </td> 
-                <td><?php echo ($employee->title); ?> </td>
+                <td><?php echo ($employee['first_name']); ?> </td>
+                <td><?php echo ($employee['last_name']); ?> </td> 
+                <td><?php echo ($employee['dept_name']); ?> </td> 
+                <td><?php echo ($employee['title']); ?> </td>
                 
              <?php endforeach; ?>
             </tr>
                       
-        </tbody>  
+        </tbody>
         
         </table>
 		</div>
